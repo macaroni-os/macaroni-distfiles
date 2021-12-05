@@ -1,0 +1,5 @@
+category: "funtoo-1.4"
+name: "gnome-stage3-amd64"
+version: "0.20210920"
+labels:
+  package.version: "2021-09-20"
