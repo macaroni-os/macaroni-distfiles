@@ -1,7 +1,7 @@
-# RockHopper Distfiles Repository Specs
+# Macaroni Linux OS Distfiles Repository Specs
 
 This repository contains the Funtoo Stage3 tarball Luet specs
-used as base rootfs for build RockHopper OS.
+used as base rootfs for build Macaroni OS.
 
 The tree is based on two major directories:
 
