@@ -1,0 +1,10 @@
+image: "alpine"
+
+package_dir: /funtoo
+prelude:
+- apk add tar curl
+- mkdir -p /funtoo/collections/funtoo/
+- curl -L https://cdn-pull.funtoo.org/1.4-release-std/x86-64bit/generic_64/${STAGE_VERSION}/${STAGE_NAME}-generic_64-1.4-release-std-${STAGE_VERSION}.tar.xz  -o /funtoo/collections/funtoo/${STAGE_NAME}.tar.xz
+env:
+- STAGE_VERSION={{ ( index .Values.labels "package.version" ) }}
+- STAGE_NAME=stage3
