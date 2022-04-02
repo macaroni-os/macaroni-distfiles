@@ -1,5 +1,5 @@
 category: "funtoo-1.4"
 name: "gnome-stage3-amd64"
-version: "0.20211224"
+version: "0.20220202"
 labels:
-  package.version: "2021-12-24"
+  package.version: "2022-02-02"
