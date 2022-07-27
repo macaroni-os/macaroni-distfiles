@@ -2,7 +2,7 @@ BACKEND?=dockerv2
 CONCURRENCY?=1
 
 # Abs path only. It gets copied in chroot in pre-seed stages
-LUET?=/usr/bin/luet
+LUET?=/usr/bin/luet-build
 export ROOT_DIR:=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 DESTINATION?=$(ROOT_DIR)/output
 COMPRESSION?=zstd
@@ -69,4 +69,4 @@ auto-bump: autobump
 
 .PHONY: validate
 validate:
-	luet tree validate -t ${TREE}
+	$(LUET) tree validate -t ${TREE}
