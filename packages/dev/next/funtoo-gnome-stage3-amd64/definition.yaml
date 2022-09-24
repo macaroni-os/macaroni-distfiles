@@ -1,5 +1,5 @@
 name: gnome-stage3-amd64
-version: 0.20220721+2
+version: 0.20220913
 category: funtoo-next
 labels:
-  package.version: "2022-07-21"
+  package.version: "2022-09-13"
