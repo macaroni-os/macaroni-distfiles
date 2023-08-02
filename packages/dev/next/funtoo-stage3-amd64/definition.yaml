@@ -1,5 +1,5 @@
 category: "funtoo-next"
 name: "stage3-amd64"
-version: "0.20230505"
+version: "0.20230713"
 labels:
-  package.version: "2023-05-05"
+  package.version: "2023-07-13"
