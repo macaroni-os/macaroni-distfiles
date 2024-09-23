@@ -1,6 +1,11 @@
+<p align="center">
+  <img src="https://github.com/macaroni-os/macaroni-site/blob/master/site/static/images/logo.png">
+</p>
+
+
 # Macaroni Linux OS Distfiles Repository Specs
 
-This repository contains the Funtoo Stage3 tarball Luet specs
+This repository contains the MARK Stage3 tarball Anise specs
 used as base rootfs for build Macaroni OS.
 
 The tree is based on two major directories:
