@@ -1,5 +1,5 @@
 category: "mark-terragon"
 name: "stage3-amd64"
-version: "0.20240916"
+version: "0.20240916+1"
 labels:
   package.version: "2024-09-16"
