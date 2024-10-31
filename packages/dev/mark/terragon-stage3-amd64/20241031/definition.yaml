@@ -1,0 +1,5 @@
+category: "mark-terragon"
+name: "stage3-amd64"
+version: "0.20241031"
+labels:
+  package.version: "2024-10-31"
