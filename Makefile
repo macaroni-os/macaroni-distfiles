@@ -18,7 +18,7 @@ ARCH?=amd64
 REPO_NAME?=macaroni-distfiles
 REPO_DESC?=Macaroni OS Distiles
 REPO_URL?=https://dl.macaronios.org/repos/macaroni-distfiles/
-REPO_VALUES?=values/amd64.yaml
+REPO_VALUES?=
 export REPO_VALUES
 
 ifneq ($(strip $(REPO_CACHE)),)
