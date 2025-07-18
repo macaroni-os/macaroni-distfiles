@@ -1,0 +1,5 @@
+category: "mark-xl"
+name: "stage3-amd64"
+version: "0.20250718"
+labels:
+  package.version: "2025-07-18"
