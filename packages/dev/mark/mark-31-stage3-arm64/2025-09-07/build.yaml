@@ -1,0 +1,13 @@
+image: "macaronios/terragon-minimal:latest-amd64"
+
+package_dir: /mark
+prelude:
+- anise i --sync-repos curl tar -y --cleanup
+- mkdir -p /mark/collections/mark/
+- >-
+  curl -L https://mark-os.macaronios.org/mark-stages-mark31/mark-31/${RELEASE}/arm-64bit/arm64_generic/${STAGE_VERSION}/${STAGE_NAME}-arm-64bit-arm64_generic-mark%2Bminimal-${STAGE_VERSION}.tar.xz
+  -o /mark/collections/mark/${STAGE_NAME}-arm-64bit-mark-31.tar.xz
+env:
+- STAGE_VERSION={{ ( index .Values.labels "package.version" ) }}
+- STAGE_NAME=stage3
+- RELEASE=mark
