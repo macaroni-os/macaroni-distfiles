@@ -1,5 +1,5 @@
-category: "mark-i"
-name: "kde-stage3-amd64"
-version: "0.20250916"
+name: kde-stage3-amd64
+version: 0.20250916+1
+category: mark-i
 labels:
   package.version: "2025-09-16"
