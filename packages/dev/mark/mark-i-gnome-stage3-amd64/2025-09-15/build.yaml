@@ -5,7 +5,7 @@ prelude:
 - anise i --sync-repos curl tar -y --cleanup
 - mkdir -p /mark/collections/mark/
 - >-
-  set -x
+  set -x &&
   curl -L https://mark-os.macaronios.org/mark-stages-phoenix/phoenix/${RELEASE}/x86-64bit/generic_64/${STAGE_VERSION}/stage3-x86-64bit-generic_64-mark%2Bphoenix%2Bmark-i%2Bgnome-${STAGE_VERSION}.tar.xz
   -o /mark/collections/mark/${STAGE_NAME}-mark-i.tar.xz
 # Testing the tarball
