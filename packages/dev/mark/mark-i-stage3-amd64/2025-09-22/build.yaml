@@ -1,0 +1,19 @@
+image: "macaronios/terragon-minimal:latest-amd64"
+
+package_dir: /mark
+prelude:
+- anise i --sync-repos curl tar -y --cleanup
+- mkdir -p /mark/collections/mark/
+- >-
+  set -x &&
+  curl -L https://mark-os.macaronios.org/mark-stages-phoenix/phoenix/${RELEASE}/x86-64bit/generic_64/${STAGE_VERSION}/stage3-x86-64bit-generic_64-mark%2Bphoenix%2Bmark-i%2Bminimal-${STAGE_VERSION}.tar.xz
+  -o /mark/collections/mark/${STAGE_NAME}-mark-i.tar.xz
+# Testing the tarball
+- >-
+  mkdir /test &&
+  tar -C /test -xJvf /mark/collections/mark/${STAGE_NAME}-mark-i.tar.xz
+
+env:
+- STAGE_VERSION={{ ( index .Values.labels "package.version" ) }}
+- STAGE_NAME=stage3
+- RELEASE=mark
