@@ -1,0 +1,5 @@
+name: stage3-amd64
+version: "0.20251104"
+category: mark-v
+labels:
+  package.version: "2025-11-04"
